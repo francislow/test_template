@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import db from './firebase'
-import { collection, query, where, getDocs, onSnapshot, doc } from "firebase/firestore"
+import { collection, query, where, onSnapshot } from "firebase/firestore"
 
 function App() {
   let [title, setTitle] = useState(null)
