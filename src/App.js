@@ -10,8 +10,8 @@ function App() {
   useEffect(() => {
     const collectionRef = query(collection(db, "sites"), where("url", "==", window.location.hostname));
     onSnapshot(collectionRef, (snapshots) => {
-      let { inputs } = snapshots.docs.map(doc => doc.data())[0]
-      let { name, headline } = inputs
+      let { field_inputs } = snapshots.docs.map(doc => doc.data())[0]
+      let { name, headline } = field_inputs
       setName(name)
       setHeadline(headline)
     })
