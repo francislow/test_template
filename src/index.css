@@ -19,13 +19,7 @@ a:hover {
   text-decoration: none;
 }
 
-html {
-  --color-yellow: #FFD43E;
-  --color-dark-yellow: #FFC806;
-  --color-dark-grey: #353535;
-  --color-white: #ffffff;
-  --color-blue: #0094FF;
-}
+
 
 .margin-top-5 {
   margin-top: 5px;
