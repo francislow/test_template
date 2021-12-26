@@ -12,6 +12,7 @@ function App() {
   let [githubUrl, setGithubUrl] = useState(null)
   let [linkedinUrl, setLinkedinUrl] = useState(null)
 
+  // Test trigger
   // Init input and start listening for input changes
   useEffect(() => {
     const collectionRef = query(collection(db, "sites"), where("url", "==", window.location.hostname));
