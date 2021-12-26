@@ -17,13 +17,13 @@ function App() {
     const collectionRef = query(collection(db, "sites"), where("url", "==", window.location.hostname));
     onSnapshot(collectionRef, (snapshots) => {
       let { field_inputs } = snapshots.docs.map(doc => doc.data())[0]
-      let { name, headline, email, instaUrl, githubUrl, linkedinUrl } = field_inputs
+      let { name, headline, email, insta_url, github_url, linkedin_url } = field_inputs
       setName(name)
       setHeadline(headline)
       setEmail(email)
-      setInstaUrl(instaUrl)
-      setGithubUrl(githubUrl)
-      setLinkedinUrl(linkedinUrl)
+      setInstaUrl(insta_url)
+      setGithubUrl(github_url)
+      setLinkedinUrl(linkedin_url)
 
       // Set web title
       document.title = name;
